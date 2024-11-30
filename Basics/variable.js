@@ -1,5 +1,5 @@
-//data type -- Premitive - String, Number, 
-//Non premitive - Array, Object, Function
+//data type -- Premitive - String, Number, Boolean
+//Non premitive/ Reference  - Array, Object, Function
 let na = "Umesh"
 const id = 4.3
 const temp = null
@@ -22,3 +22,22 @@ let myfuc = function(){
 console.log(typeof hero)
 console.log(typeof myobj)
 console.log(typeof myfuc)
+// ++++++++++++++++++++++++++++++++++++++
+// Memory allocation - Premitive => Statck, Non Premitive=> Heap
+
+let First = "Umesh"
+let second = First
+ console.log(second)
+ console.log(First)
+
+let profile1 = {
+    name: "Umesh",
+    age : 39
+} 
+
+let profile2 = profile1
+
+profile2.age = 40
+
+console.log(profile1.age)
+console.log(profile2.age)
